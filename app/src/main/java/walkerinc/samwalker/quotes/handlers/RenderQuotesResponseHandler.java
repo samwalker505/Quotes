@@ -8,11 +8,11 @@ import walkerinc.samwalker.quotes.models.Quote;
 /**
  * Created by samwalker on 7/12/14.
  */
-public class GetQuotesResponseHandler implements QuotesResponseHandler {
+public class RenderQuotesResponseHandler implements QuotesResponseHandler {
 
     ActivityMain activityMain;
 
-    public GetQuotesResponseHandler(ActivityMain activityMain) {
+    public RenderQuotesResponseHandler(ActivityMain activityMain) {
         this.activityMain = activityMain;
     }
 
