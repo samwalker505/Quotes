@@ -1,0 +1,12 @@
+23:30:02.711 [Daemon worker Thread 2] INFO  o.a.AndroidAnnotationProcessor:85 - Initialize AndroidAnnotations 3.0.1 with options {}
+23:30:02.857 [Daemon worker Thread 2] INFO  o.a.AndroidAnnotationProcessor:109 - Start processing for 3 annotations on 10 elements
+23:30:02.867 [Daemon worker Thread 2] ERROR o.a.h.AndroidManifestFinder:134 - Could not find the AndroidManifest.xml file, going up from path [/Users/samwalker/Documents/Android/workspace/Quotes/app/build/generated/source/apt/debug] found using dummy file [] (max atempts: file:///Users/samwalker/Documents/Android/workspace/Quotes/app/build/generated/source/apt/debug/dummy1418052602866.java)
+23:30:02.867 [Daemon worker Thread 2] INFO  o.a.p.TimeStats:81 - Time measurements: [Whole Processing = 10 ms], [Extract Annotations = 6 ms], [Extract Manifest = 2 ms], 
+23:30:02.868 [Daemon worker Thread 2] INFO  o.a.AndroidAnnotationProcessor:123 - Finish processing
+23:37:39.305 [Daemon worker Thread 4] INFO  o.a.AndroidAnnotationProcessor:85 - Initialize AndroidAnnotations 3.0.1 with options {}
+01:56:53.476 [Daemon worker] INFO  o.a.AndroidAnnotationProcessor:85 - Initialize AndroidAnnotations 3.0.1 with options {}
+01:59:00.370 [Daemon worker Thread 2] INFO  o.a.AndroidAnnotationProcessor:85 - Initialize AndroidAnnotations 3.0.1 with options {}
+02:00:58.396 [Daemon worker Thread 3] INFO  o.a.AndroidAnnotationProcessor:85 - Initialize AndroidAnnotations 3.0.1 with options {}
+02:10:52.892 [Daemon worker Thread 6] INFO  o.a.AndroidAnnotationProcessor:85 - Initialize AndroidAnnotations 3.0.1 with options {}
+02:11:15.235 [Daemon worker Thread 6] INFO  o.a.AndroidAnnotationProcessor:85 - Initialize AndroidAnnotations 3.0.1 with options {}
+14:52:35.946 [Daemon worker] INFO  o.a.AndroidAnnotationProcessor:85 - Initialize AndroidAnnotations 3.0.1 with options {}

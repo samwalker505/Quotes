@@ -1,12 +1,9 @@
-package walkerinc.samwalker.quotes.manager;
+package walkerinc.samwalker.quotes.managers;
 
 import com.loopj.android.http.AsyncHttpClient;
 
-import java.util.ArrayList;
-
 import walkerinc.samwalker.quotes.handlers.JsonQuotesResponseHandler;
 import walkerinc.samwalker.quotes.handlers.QuotesResponseHandler;
-import walkerinc.samwalker.quotes.model.Quote;
 
 /**
  * Created by samwalker on 7/12/14.

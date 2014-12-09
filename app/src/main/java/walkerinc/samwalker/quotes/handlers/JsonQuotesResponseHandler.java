@@ -1,7 +1,5 @@
 package walkerinc.samwalker.quotes.handlers;
 
-import android.widget.Toast;
-
 import com.loopj.android.http.JsonHttpResponseHandler;
 
 import org.apache.http.Header;
@@ -10,7 +8,7 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
-import walkerinc.samwalker.quotes.model.Quote;
+import walkerinc.samwalker.quotes.models.Quote;
 
 /**
  * Created by samwalker on 7/12/14.
@@ -41,6 +39,7 @@ public class JsonQuotesResponseHandler extends JsonHttpResponseHandler {
         for (int i = 0; i < totalNumOfQuotes; i++) {
             if (quotesJsonArray != null) {
                 Quote quote = new Quote(quotesJsonArray.optJSONObject(i));
+                quote.save();
                 quotes.add(quote);
             }
         }

@@ -1,12 +1,14 @@
-package walkerinc.samwalker.quotes.model;
+package walkerinc.samwalker.quotes.models;
+
+import com.orm.SugarRecord;
 
 import org.json.JSONObject;
 
 /**
  * Created by samwalker on 7/12/14.
  */
-public class Quote {
-    private int id;
+public class Quote extends SugarRecord<Quote>{
+    private int webId;
     private String quote;
     private String author;
     private String imageUrl;
@@ -16,16 +18,18 @@ public class Quote {
     final String FIELD_QUOTE = "quote";
     final String FIELD_IMAGE_URL = "image";
 
+    public Quote() {}
+
 
     public Quote(JSONObject quoteJson) {
-        id = quoteJson.has(FIELD_ID)?quoteJson.optInt(FIELD_ID):-1;
+        webId = quoteJson.has(FIELD_ID)?quoteJson.optInt(FIELD_ID):-1;
         author = quoteJson.has(FIELD_AUTHOR)?quoteJson.optString(FIELD_AUTHOR):null;
         quote = quoteJson.has(FIELD_QUOTE)?quoteJson.optString(FIELD_QUOTE):null;
         imageUrl = quoteJson.has(FIELD_IMAGE_URL)?quoteJson.optString(FIELD_IMAGE_URL):null;
     }
 
     private void setId(int id) {
-        this.id = id;
+        this.webId = id;
     }
 
     private void setQuote (String quote){
@@ -40,8 +44,8 @@ public class Quote {
         this.imageUrl = imageUrl;
     }
 
-    public int getId() {
-        return this.id;
+    public int getWebId() {
+        return this.webId;
     }
 
     public String getQuote(){

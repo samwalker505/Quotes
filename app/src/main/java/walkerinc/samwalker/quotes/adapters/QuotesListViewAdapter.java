@@ -1,4 +1,4 @@
-package walkerinc.samwalker.quotes.adapter;
+package walkerinc.samwalker.quotes.adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -10,7 +10,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 import walkerinc.samwalker.quotes.R;
-import walkerinc.samwalker.quotes.model.Quote;
+import walkerinc.samwalker.quotes.models.Quote;
 
 /**
  * Created by samwalker on 7/12/14.

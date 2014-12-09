@@ -1,4 +1,4 @@
-package walkerinc.samwalker.quotes;
+package walkerinc.samwalker.quotes.activities;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -8,10 +8,11 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
-import walkerinc.samwalker.quotes.adapter.QuotesListViewAdapter;
+import walkerinc.samwalker.quotes.R;
+import walkerinc.samwalker.quotes.adapters.QuotesListViewAdapter;
 import walkerinc.samwalker.quotes.handlers.GetQuotesResponseHandler;
-import walkerinc.samwalker.quotes.manager.QuoteManager;
-import walkerinc.samwalker.quotes.model.Quote;
+import walkerinc.samwalker.quotes.managers.QuoteManager;
+import walkerinc.samwalker.quotes.models.Quote;
 
 
 public class ActivityMain extends ActionBarActivity {
