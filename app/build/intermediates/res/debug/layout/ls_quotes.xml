@@ -1,22 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <TextView
-        android:layout_width="wrap_content"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/White"
+    android:layout_marginTop="@dimen/ls_quotes_padding_top"
+    android:paddingTop="@dimen/ls_quotes_padding_top">
+    <RelativeLayout
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="5dp"
-        android:textSize="@dimen/font_size_quote"
-        android:text="New Text"
-        android:id="@+id/txtQuote" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingTop="5dp"
-        android:textSize="@dimen/font_size_author"
-        android:text="New Text"
-        android:id="@+id/txtAuthor" />
-</LinearLayout><!-- From: file:/Users/samwalker/Documents/Android/workspace/Quotes/app/src/main/res/layout/ls_quotes.xml -->
+        android:gravity="center_horizontal">
+        <ImageView
+            android:layout_width="@dimen/ls_quotes_bg_img"
+            android:layout_height="@dimen/ls_quotes_bg_img"
+            android:id="@+id/imgQuote"/>
+        <LinearLayout
+            android:layout_width="@dimen/ls_quotes_bg_img"
+            android:layout_height="@dimen/ls_quotes_bg_img"
+            android:orientation="vertical"
+            android:gravity="center">
+            <LinearLayout
+                android:layout_width="@dimen/ls_quotes_bg_img"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/ls_quotes_lin_layout_padding_top_bot"
+                android:paddingBottom="@dimen/ls_quotes_lin_layout_padding_top_bot"
+                android:background="@color/Gainsboro_Transparent"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_quote"
+                    android:text="New Text"
+                    android:id="@+id/txtQuote" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:textSize="@dimen/font_size_author"
+                    android:text="New Text"
+                    android:id="@+id/txtAuthor" />
+                </LinearLayout>
+        </LinearLayout>
+        </RelativeLayout>
+</RelativeLayout><!-- From: file:/Users/samwalker/Documents/Android/workspace/Quotes/app/src/main/res/layout/ls_quotes.xml -->

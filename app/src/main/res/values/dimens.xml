@@ -5,4 +5,9 @@
 
     <dimen name="font_size_quote">16sp</dimen>
     <dimen name="font_size_author">12sp</dimen>
+
+    <dimen name="ls_quotes_bg_img">300dp</dimen>
+    <dimen name="ls_quotes_padding_side">20dp</dimen>
+    <dimen name="ls_quotes_padding_top">20dp</dimen>
+    <dimen name="ls_quotes_lin_layout_padding_top_bot">15dp</dimen>
 </resources>

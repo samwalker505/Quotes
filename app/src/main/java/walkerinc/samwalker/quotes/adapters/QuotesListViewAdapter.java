@@ -5,7 +5,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.nostra13.universalimageloader.core.DisplayImageOptions;
+import com.nostra13.universalimageloader.core.ImageLoader;
+import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 
 import java.util.ArrayList;
 
@@ -19,10 +24,16 @@ public class QuotesListViewAdapter extends BaseAdapter {
 
     Context context;
     ArrayList<Quote> quotes;
+    DisplayImageOptions displayImageOptions;
+    ImageLoaderConfiguration imageLoaderConfiguration;
+    ImageLoader imageLoader;
 
     public QuotesListViewAdapter(Context context, ArrayList<Quote> quotes) {
         this.context = context;
         this.quotes = quotes;
+
+        configImageLoader();
+
     }
 
     @Override
@@ -46,12 +57,23 @@ public class QuotesListViewAdapter extends BaseAdapter {
         View row = inflater.inflate(R.layout.ls_quotes, null);
         TextView txtQuote = (TextView)row.findViewById(R.id.txtQuote);
         TextView txtAuthor = (TextView)row.findViewById(R.id.txtAuthor);
+        ImageView imgQuote = (ImageView)row.findViewById(R.id.imgQuote);
 
         Quote quote = quotes.get(i);
 
         txtQuote.setText(quote.getQuote());
         txtAuthor.setText(quote.getAuthor());
+        imageLoader.displayImage(quote.getImageUrl(),imgQuote, displayImageOptions);
 
         return row;
+    }
+
+    private void configImageLoader() {
+        imageLoaderConfiguration = new ImageLoaderConfiguration.Builder(context).build();
+        ImageLoader.getInstance().init(imageLoaderConfiguration);
+        imageLoader = ImageLoader.getInstance();
+        displayImageOptions = new DisplayImageOptions.Builder()
+                                  .cacheInMemory(true)
+                                  .build();
     }
 }

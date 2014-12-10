@@ -18,3 +18,5 @@
 17:09:36.7 [Daemon worker Thread 9] INFO  o.a.AndroidAnnotationProcessor:85 - Initialize AndroidAnnotations 3.0.1 with options {}
 17:15:50.753 [Daemon worker Thread 11] INFO  o.a.AndroidAnnotationProcessor:85 - Initialize AndroidAnnotations 3.0.1 with options {}
 17:16:29.590 [Daemon worker Thread 11] INFO  o.a.AndroidAnnotationProcessor:85 - Initialize AndroidAnnotations 3.0.1 with options {}
+02:01:14.375 [Daemon worker Thread 2] INFO  o.a.AndroidAnnotationProcessor:85 - Initialize AndroidAnnotations 3.0.1 with options {}
+02:09:08.599 [Daemon worker Thread 6] INFO  o.a.AndroidAnnotationProcessor:85 - Initialize AndroidAnnotations 3.0.1 with options {}
